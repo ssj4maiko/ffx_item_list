@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FF10 item database</title>
+	<script type='text/javascript' src='FFX_item_list.js'></script>
+	<style type="text/css">
+		body{
+			font-family: Arial;
+		}
+		#copy_target{
+			position:relative;
+			width:100%;
+			float:left;
+		}
+		#copy_target .result_content{
+			float:left;
+			width:290px;
+		}
+		#loading {
+			position:absolute;
+			width:100%;
+			height:100%;
+			float:left;
+			background-color: rgba(0,0,0,0.5);
+		}
+		.top_right_buttons{
+			top:3px;
+			right:3px;
+			position:absolute;
+			background-color: purple;
+		}
+		.top_right_buttons .copy{
+			background-color: rgba(0,0,255,0.5);
+		}
+		.top_right_buttons .delete{
+			background-color: rgba(255,0,0,0.5);
+		}
+
+		#content .top_right_buttons .delete,
+		#copy_target .top_right_buttons .copy{
+			display:none;
+		}
+
+		#content > fieldset {
+			width:24%;
+			min-width:350px;
+			float:left;
+			position:relative;
+		}
+		.result_content{
+			position:relative;
+		}
+		#content .results{
+			height:300px;
+			width:100%;
+			padding-left:10px;
+			overflow:auto;
+		}
+		.results {
+			font-size: 11px;
+		}
+		.results ul{
+			margin:0px 0px 3px 0px;
+			padding-left:10px;
+			list-style-type: none;
+		}
+		.results p {
+			margin:0px;
+		}
+	</style>
+</head>
+<body>
+	<div id='loading'>
+		Loading!
+	</div>
+	<div id='content'>
+		<fieldset>
+			<legend>Search Item</legend>
+			<select id='_ITEMS'>
+				<option value="">Loading</option>
+			</select>
+
+			<fieldset class='result_content' id='ITEMS_RESULT'>
+				<legend>Item</legend>
+				<div class="top_right_buttons">
+					<div class='copy'>Copy</div>
+					<div class='delete'>Delete</div>
+				</div>
+				<div class="results"></div>
+			</fieldset>
+		</fieldset>
+
+
+		<fieldset>
+			<legend>Search by Aeon Ability</legend>
+			<select id='_AEONABILITY'>
+				<option value="">Loading</option>
+			</select>
+
+			<fieldset class='result_content' id='ITEMS_RESULT'>
+				<legend>Aeon Ability</legend>
+				<div class="top_right_buttons">
+					<div class='copy'>Copy</div>
+					<div class='delete'>Delete</div>
+				</div>
+				<div class="results"></div>
+			</fieldset>
+		</fieldset>
+
+
+		<fieldset>
+			<legend>Search by Customizate ability</legend>
+			<select id='_CUSTOMIZE'>
+				<option value="">Loading</option>
+			</select>
+
+			<fieldset class='result_content' id='ITEMS_RESULT'>
+				<legend>Customize</legend>
+				<div class="top_right_buttons">
+					<div class='copy'>Copy</div>
+					<div class='delete'>Delete</div>
+				</div>
+				<div class="results"></div>
+			</fieldset>
+		</fieldset>
+
+
+		<fieldset>
+			<legend>Search Monster</legend>
+			<select id='_MONSTERS'>
+				<option value="">Loading</option>
+			</select>
+
+			<fieldset class='result_content' id='ITEMS_RESULT'>
+				<legend>Monster</legend>
+				<div class="top_right_buttons">
+					<div class='copy'>Copy</div>
+					<div class='delete'>Delete</div>
+				</div>
+				<div class="results"></div>
+			</fieldset>
+		</fieldset>
+
+		<fieldset>
+			<legend>Savestate</legend>
+			<textarea id="saveState" cols="40" rows="20"></textarea>
+			<button id='loadState'>Load State</button>
+		</fieldset>
+	</div>
+	<fieldset id='copy_target'>
+		<legend>Scraps</legend>
+	</fieldset>
+</body>
+</html>
