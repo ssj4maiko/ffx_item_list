@@ -28,8 +28,8 @@ Then using a text editor, delete all Character Headers like:
 
 Then turn on your console log, run the script and check for errors. There are a few mistakes, like using "-" instead of "=", and you need to correct from the file, some of the logs should give you the consecutive numbers, those are the lines from the text file, so you can easily locate them. There are not many of them, and when it runs everything, there will be buttons so you can download and rewrite the whole DB easily.
 
-Here is a live demo:
+Live demo:
 
-https://dl.dropboxusercontent.com/u/33510176/KHBBS/FFX.html
+DB Maker - https://dl.dropboxusercontent.com/u/33510176/KHBBS/FFX.html
 
-https://dl.dropboxusercontent.com/u/33510176/KHBBS/FF10.html
+Item List - https://dl.dropboxusercontent.com/u/33510176/KHBBS/FF10.html
