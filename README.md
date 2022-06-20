@@ -30,6 +30,4 @@ Then turn on your console log, run the script and check for errors. There are a 
 
 Live demo:
 
-DB Maker - https://dl.dropboxusercontent.com/u/33510176/KHBBS/FFX.html
-
-Item List - https://dl.dropboxusercontent.com/u/33510176/KHBBS/FF10.html
+Item List - http://maikoengelke.com/ffx/
